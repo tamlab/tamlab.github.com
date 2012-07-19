@@ -13,10 +13,10 @@ title : TamLab
 tagline: Site Tagline
 author :
   name : Romain MATON
-  email : romain.maton@gmail.com
+  email : romain@web-tambouille.fr
   github : rmat0n
   twitter : rmat0n
-  feedburner : qm7q9daoaj5n72nn3ctohnr65k
+  feedburner :
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
