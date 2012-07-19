@@ -1,13 +1,24 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: TamLab
+tagline: <i>The art of thinking, working and developping right</i>
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+<div id="myCarousel" class="carousel slide" style="width:600px;height:450px;line-height:450px;text-align:center;">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><img style="vertical-align:middle;display:inline-block;" src="http://nodejs.org/images/logos/nodejs-1024x768.png" /></div>
+    <div class="item"><img style="vertical-align:middle;display:inline-block;" src="https://lh6.googleusercontent.com/-hU-IXoDdlA4/ThmqTIhc7EI/AAAAAAAAAuw/6xfeIQtmXDA/s800/martin_odersky_et_moi.jpg" /></div>
+    <div class="item"><img style="vertical-align:middle;display:inline-block;" src="http://www.mind2machine.com/wp-content/uploads/2012/04/html5-logo-1.jpg" /></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+<script type="text/javascript">
+    $('.carousel').carousel({interval: 3000});
+</script>
 
 ## Update Author Attributes
 
@@ -22,25 +33,3 @@ In `_config.yml` remember to specify your own data:
       twitter : username
 
 The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
