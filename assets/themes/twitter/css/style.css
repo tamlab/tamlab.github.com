@@ -36,7 +36,6 @@ html, body {
   border: 0;
 }
 
-
 /* tag_box ======================================================== */
 
 .tag_box {
@@ -68,4 +67,22 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+/* mine ======================================================== */
+
+.valign_middle {
+    vertical-align: middle;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.carousel .item > img.inline_block {
+    display: inline-block;
+}
+
+#tag-container {
+    font-size: 21px;
+    line-height: 28px;
+}
