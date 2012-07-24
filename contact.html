@@ -1,0 +1,28 @@
+---
+layout: page
+title: Contact
+group: navigation
+---
+{% include JB/setup %}
+
+<div class="well">
+    <p>Mon parcours d&eacute;taill&eacute; est disponible sur <a href="http://www.web-tambouille.fr/a-propos-de-l-auteur">cette page</a>.</p>
+    <p>Mon CV est accessible sur :</p>
+    <ul>
+        <li><a href="http://fr.linkedin.com/in/rmaton">LinkedIn</a></li>
+        <li><a href="http://www.viadeo.com/fr/profile/romain.maton">Viadeo</a></li>
+        <li><a href="http://www.express-board.fr/">Express-Board</a></li>
+        <li><a href="https://remixjobs.com/cv/Romain-MATON/11966">RemixJobs</a></li>
+        <li><a href="http://www.freelance-info.fr/">Freelance-Info</a></li>
+    </ul>
+    <p>Mes projets sont disponibles sur <a href="https://github.com/rmat0n">Github</a> et mes pr&eacute;sentations <em>(conf&eacute;rences...)</em> sur <a href="http://www.slideshare.net/rmat0n/">Slideshare</a></p>
+    <p>Pour me contacter, vous pouvez utiliser <a href="mailto:romain@web-tambouille.fr?subject=Contact&nbsp;TamLab">cette adresse</a>.</p>
+    <p>Pour toutes questions concernant le blog Web Tambouille, merci d'utiliser <a href="http://www.web-tambouille.fr/contact">ce formulaire</a>.</p>
+</div>
+
+<script type="text/javascript">
+    $("div.well a").click(function() {
+        window.open($(this).attr("href"));
+        return false;
+    });
+</script>

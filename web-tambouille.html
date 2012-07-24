@@ -1,9 +1,26 @@
 ---
 layout: page
 title: Web Tambouille
+header: Web Tambouille
+group: navigation
 ---
 {% include JB/setup %}
 
+<div class="well">
+    <p>Redirection en cours...</p>
+    <div class="progress progress-info progress-striped active">
+        <div class="bar" style="width:0%;"></div>
+    </div>
+</div>
+
 <script type="text/javascript">
-    $(location).href("http://www.web-tambouille.fr/");
+    var progress = 0;
+    var interval = setInterval(function() {
+        progress += 10;
+        $("div.progress div.bar").css("width", progress+"%");
+        if(progress > 100) {
+            $(location).attr("href", "http://www.web-tambouille.fr/");
+            clearInterval(interval);
+        }
+    }, 100);
 </script>
