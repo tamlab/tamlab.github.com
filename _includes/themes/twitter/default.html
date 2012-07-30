@@ -11,6 +11,8 @@
     <![endif]-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.0.4/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-popover.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-carousel.js"></script>
 
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,8 +25,9 @@
       <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     -->
 </head>
-<body>
-    <div class="navbar">
+<!--<body data-spy="scroll">-->
+<body id="accueil">
+    <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
                 <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>

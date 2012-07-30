@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Accueil
-tagline: The art of thinking, working and developping right
+title : TamLab
+tagline: The art of thinking, working and developing right
 author :
   name : Romain MATON
   email : romain@web-tambouille.fr

@@ -2,6 +2,9 @@
 html, body {
     background-color: #eee;
 }
+body {
+    padding-top: 38px;
+}
 .navbar {
     margin-bottom: 0;
 }
@@ -68,7 +71,7 @@ html, body {
     color:#FFF;
 }
 
-/* mine ======================================================== */
+/* mine general ======================================================== */
 
 .valign_middle {
     vertical-align: middle;
@@ -78,15 +81,83 @@ html, body {
     text-align: center;
 }
 
+@font-face {
+    font-family: "Wipeout";
+    src: url('../font/teacher/teacher_a.ttf');
+}
+
+.wipeout {
+    font-family: "Wipeout";
+    font-size: 30px;
+}
+
+/* logo ======================================================== */
+
+.navbar .brand {
+    font-family: "Wipeout";
+    font-size: 40px;
+    padding-bottom: 2px;
+}
+
+.navbar .nav {
+    height: 50px;
+}
+
+.navbar .nav > li {
+    padding-top: 5px;
+}
+
+.navbar .nav > li > a {
+    font-size: 16px;
+}
+
+/* accueil ======================================================== */
+
+.well.accueil {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
 .carousel .item > img.inline_block {
     display: inline-block;
 }
 
 #tag-container {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #tag-container a {
-    padding: 15px;
-    line-height: 27px;
+    padding: 13px;
+    line-height: 31px;
+}
+
+.nav-pills .active > a, .nav-pills .active > a:hover {
+    background-color: #00A355;
+}
+
+/* contact ======================================================== */
+
+#contact {
+    margin-top: 30px;
+}
+
+.row-social {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.column-social {
+    text-align: center;
+}
+
+.btn-large {
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+/* web tambouille ======================================================== */
+
+#web-tambouille {
+    margin-top: 30px;
 }

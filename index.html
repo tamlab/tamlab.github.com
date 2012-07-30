@@ -1,26 +1,56 @@
 ---
 layout: page
-title: TamLab
-tagline: <i>The art of thinking, working and developping right</i>
+title:
+tagline: <i xmlns="http://www.w3.org/1999/html">The art of thinking, working and developing right</i>
 ---
 {% include JB/setup %}
 
-<div class="container-fluid">
+<div class="container-fluid well accueil">
     <div class="row-fluid">
         <div id="carousel-container" class="span8">
             <center>
-                <div id="myCarousel" class="carousel slide" style="width:600px;height:450px;line-height:450px;text-align:center;">
+                <div id="carousel" class="carousel slide" style="width:600px;height:450px;line-height:450px;text-align:center;">
                   <!-- Carousel items -->
                   <div class="carousel-inner">
-                    <div class="active item valign_middle"><img class="valign_middle inline_block" src="https://lh4.googleusercontent.com/-qFjoM09iCfU/UAkqKbbdS4I/AAAAAAAAA5g/qyjGYCh-soM/s800/nuage.png" /></div>
-                    <div class="item valign_middle"><img class="valign_middle inline_block" src="https://lh5.googleusercontent.com/-v3TL9xjC4Zc/UAkrRszFAZI/AAAAAAAAA54/G0lmTUF8ptM/s800/nodejs.png" /></div>
-                    <div class="item valign_middle"><img class="valign_middle inline_block" src="https://lh3.googleusercontent.com/-kSlhN81A3qc/UAkrQxuyA1I/AAAAAAAAA5w/U2BcpYAnOWU/s800/html5.jpg" /></div>
-                    <div class="item valign_middle"><img class="valign_middle inline_block" src="https://lh6.googleusercontent.com/-L2var5x9yyo/UAkryUxbH7I/AAAAAAAAA6A/vN4alY0tmMg/s800/web-tambouille.png" /></div>
-                    <div class="item valign_middle"><img class="valign_middle inline_block" src="https://lh3.googleusercontent.com/-_V2WLeND5gM/UAkqz7Sq8fI/AAAAAAAAA6s/co3Vg0OCP3E/s800/devoxx-france-2012.jpg" /></div>
+                    <div class="active item valign_middle">
+                        <img class="valign_middle inline_block" src="https://lh4.googleusercontent.com/-qFjoM09iCfU/UAkqKbbdS4I/AAAAAAAAA5g/qyjGYCh-soM/s800/nuage.png" />
+                        <div class="carousel-caption">
+                            <h4>Technologies</h4>
+                            <p>Nos comp&eacute;tences techniques</p>
+                        </div>
+                    </div>
+                    <div class="item valign_middle">
+                        <img class="valign_middle inline_block" src="https://lh5.googleusercontent.com/-v3TL9xjC4Zc/UAkrRszFAZI/AAAAAAAAA54/G0lmTUF8ptM/s800/nodejs.png" />
+                        <div class="carousel-caption">
+                            <h4>Node.js</h4>
+                            <p>Le serveur ultime prouvant que le concept de <em>Javascript as a first class language</em> doit &ecirc;tre regard&eacute; de plus pr&egrave;s</p>
+                        </div>
+                    </div>
+                    <div class="item valign_middle">
+                        <img class="valign_middle inline_block" src="https://lh3.googleusercontent.com/-kSlhN81A3qc/UAkrQxuyA1I/AAAAAAAAA5w/U2BcpYAnOWU/s800/html5.jpg" />
+                        <div class="carousel-caption">
+                            <h4>HTML5</h4>
+                            <p>Pas encore la norme mais l&apos;avenir du web, du mobile et des tablettes</p>
+                        </div>
+                    </div>
+                    <div class="item valign_middle">
+                        <img class="valign_middle inline_block" src="https://lh6.googleusercontent.com/-L2var5x9yyo/UAkryUxbH7I/AAAAAAAAA6A/vN4alY0tmMg/s800/web-tambouille.png" />
+                        <div class="carousel-caption">
+                            <h4>Web Tambouille</h4>
+                            <p>Le blog r&eacute;f&eacute;rence sur Java, Scala, Web, Node.js, Android, HTML5, JS, NoSQL et bien d'autres !</p>
+                        </div>
+                    </div>
+                    <div class="item valign_middle">
+                        <img class="valign_middle inline_block" src="https://lh3.googleusercontent.com/-_V2WLeND5gM/UAkqz7Sq8fI/AAAAAAAAA6s/co3Vg0OCP3E/s800/devoxx-france-2012.jpg" />
+                        <div class="carousel-caption">
+                            <h4>Devoxx France 2012</h4>
+                            <p>Speaker &agrave; la conf&eacute;rence Devoxx France 2012 avec une session sur l'<a target="_blank" href="http://www.devoxx.com/display/FR12/Optimiser+votre+site+Web+sur+mobile">Optimisation des sites Web sur mobile</a></p>
+                        </div>
+                    </div>
                   </div>
                   <!-- Carousel nav -->
-                  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                  <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                  <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
                 </div>
             </center>
         </div>
@@ -51,18 +81,159 @@ Confluence
 JRebel
 -->
             <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#">Leader technique</a></li>
-              <li class="active"><a href="#">Software Craftsman</a></li>
-              <li class="active"><a href="#">Pratiques agiles</a></li>
-              <li class="active"><a href="#">Veille technos</a></li>
-              <li class="active"><a href="#">Programmation fonctionnelle</a></li>
-              <li class="active"><a href="#">Qualit&eacute; de code</a></li>
-              <li class="active"><a href="#">Productivit&eacute;</a></li>
+              <li class="active"><a href="#" title="Leader technique" data-content="Cadrage technique<br />Architecture adapt&eacute;e<br />Pas de <em>Big Design Up Front</em><br />Qualit&eacute; de code<br />Frameworks Web et Back<br />S&eacute;curit&eacute; et performance">Leader technique</a></li>
+              <li class="active"><a href="#" title="Software Craftsman" data-content="Qualit&eacute; logicielle<br />Valeur du programme<br />">Software Craftsman</a></li>
+              <li class="active"><a href="#" title="Pratiques agiles" data-content="Scrum / XP<br />Pair Programming<br />TDD">Pratiques agiles</a></li>
+              <li class="active"><a href="#" title="Veille technos" data-content="Reader<br />Quora<br />Prismatic<br />StackOverflow">Veille technos</a></li>
+              <li class="active"><a href="#" title="Programmation fonctionnelle" data-content="Scala<br />Javascript<br />Java (Google Guava...)">Programmation fonctionnelle</a></li>
+              <li class="active"><a href="#" title="Qualit&eacute; de code" data-content="Jenkins<br />TeamCity<br />Sonar<br />Et bien d&apos;autres !">Qualit&eacute; de code</a></li>
+              <li class="active"><a href="#" title="Productivit&eacute;" data-content="IntelliJ IDEA Ultimate personnel<br />JRebel personnel">Productivit&eacute;</a></li>
             </ul>
         </div>
     </div>
 </div>
 
+<div id="contact" class="row-fluid table-social">
+    <div class="span12">
+        <div class="row-fluid">
+            <div class="span4 column-social">
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <h2 class="wipeout">CV</h2>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://www.web-tambouille.fr/a-propos-de-l-auteur">Parcours d&eacute;taill&eacute;</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://fr.linkedin.com/in/rmaton">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://www.viadeo.com/fr/profile/romain.maton">Viadeo</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://www.express-board.fr/">Express-Board</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="https://remixjobs.com/cv/Romain-MATON/11966">RemixJobs</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://www.freelance-info.fr/">Freelance-Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <h2 class="wipeout">Social</h2>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="https://github.com/rmat0n">GitHub</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://www.slideshare.net/rmat0n/newsfeed">SlideShare</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://www.quora.com/Romain-Maton">Quora</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="https://twitter.com/rmat0n">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <h2 class="wipeout">Contact</h2>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="mailto:romain@web-tambouille.fr?subject=Contact&nbsp;TamLab">TamLab</a>
+                    </div>
+                </div>
+                <div class="row-fluid row-social">
+                    <div class="span12">
+                        <a class="btn btn-info btn-large" href="http://www.web-tambouille.fr/contact">Web Tambouille</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="web-tambouille" class="well">
+    <h1 class="wipeout">Web Tambouille</h1>
+    <br />
+    <p class="container">Rendez-vous imm&eacute;diatement sur <a href="http://www.web-tambouille.fr/" class="redirect">mon blog !</a></p>
+    <div class="hide">
+        <p>Redirection en cours...</p>
+        <div class="progress progress-info progress-striped active">
+            <div class="bar" style="width:0%;"></div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript">
-    $('.carousel').carousel({interval: 5000});
+    // Menu (make dynamic)
+    $(".navbar a").each(function(i) {
+        if(i==1) {
+            $(this).closest("li").addClass("active");
+        }
+        $(this).attr("href", $(this).attr("href").replace("/", "#").replace(".html", ""));
+    }).click(function() {
+        $(".navbar ul li").removeClass("active");
+        $(this).closest("li").addClass("active");
+    });
+
+    // Carousel
+    $('#carousel').carousel({interval: 5000});
+
+    // Skills popup
+    $('#tag-container ul li a').popover({placement: "left"});
+
+    // Social links
+    $("#contact h2").each(function() {
+        $(this).css("width", "100%").css("text-align", "center");
+    });
+    $("#contact a").each(function() {
+        $(this).attr("target", "_blank").css("width", "80%").css("text-align", "center");
+    });
+
+    // Redirection
+    $("#web-tambouille p.container a.redirect").click(function() {
+        var $this = $(this);
+        $this.closest("p.container").hide().next("div").show();
+        var progress = 0;
+        var interval = setInterval(function() {
+            progress += 10;
+            $("div.progress div.bar").css("width", progress+"%");
+            if(progress > 100) {
+                clearInterval(interval);
+                $this.closest("p.container").show().next("div").hide();
+                $("div.progress div.bar").css("width", "0%");
+                $(location).attr("href", "http://www.web-tambouille.fr/");
+            }
+        }, 100);
+        return false;
+    });
 </script>
